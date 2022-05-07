@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>quantas pessoas vão ao churrasco</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+        <!--algoritmo para calcular churrasco lucas 05/05/2022
+        Adultos (por pessoa):
+Quantidade de carne para homens: 400 gramas
+Quantidade de carne para mulheres: 300 gramas
+Acompanhamentos: 200 gramas
+Quantidade de bebida não alcoólica (refrigerante, suco e água): 1,5 litro
+Quantidade de cerveja: 5 latas ou long necks
+ 
+Crianças de até 11 anos (por pessoa):
+Quantidade de carne: 200 gramas
+Quantidade de bebida não alcoólica (refrigerante, suco e água): 750 ml
+ 
+Carvão: 5 quilos para 6 quilos de carne-->
+
+    <script>
+    let homens,mulheres,consumoHomens,consumoMulheres,pessoas,bebidas,carvao,consumoTotal;
+    homens=parseInt(prompt("quantidades de homens"));
+    mulheres=parseInt(prompt("quantidades de mulheres"));
+    pessoas=homens+mulheres; 
+    consumoHomens=homens*400;
+    consumoMulheres=mulheres*400;
+    bebidas=pessoas*1500;
+    consumoTotal=consumoHomens+consumoMulheres;
+    carvao=consumoTotal/5
+
+    alert("irao "+pessoas+" pessoas ao seu churrasco");
+    alert("homens irao consumir "+ consumoHomens + " gramas ");
+    alert("mulheres irao consumir "+ consumoMulheres +" gramas ");
+    alert("ira precisar de "+bebidas+" ML de bebidas");
+    alert("o consumo total sera de carne "+consumoTotal+" gramas");
+    alert("sera necessario "+carvao+" gramas de carvao");
+    
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
